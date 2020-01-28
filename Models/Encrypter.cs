@@ -4,8 +4,11 @@ using System.IO;
 using System.Text;
 
 namespace BDAT1001_Assignment1_Routledge.Models
-{
-    class Encrypter
+{ 
+    /// <summary>
+    /// Provides Simple Encryption of text
+    /// </summary>
+class Encrypter
     {
         public Encrypter(string originalText, int[] encryptionCipher = null, int encryptionDepth = 1)
         {
@@ -251,5 +254,6 @@ namespace BDAT1001_Assignment1_Routledge.Models
             }
             return sb.ToString();
         }
+
     }
 }
